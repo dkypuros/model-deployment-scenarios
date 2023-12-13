@@ -66,6 +66,8 @@ graph TD
 
 ## Detailed Design
 
+### Public Cloud is Wrapped around Premise becuase of VPC Assumptions
+
 ```mermaid
 
 C4Context
