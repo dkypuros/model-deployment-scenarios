@@ -18,6 +18,7 @@
 | **Scenario 3**               | Local Training and Serving                                                                                    | Similar to Scenario 2, but all activities, including training and serving, happen locally at the customer's premises.                                           |
 | **Scenario 4**               | Serving in Public Cloud with Local Inference                                                                  | AI model is served from the public cloud, but inference occurs locally at the customer's premises. Balances cloud capabilities with local data processing. |
 
+```mermaid
 graph TD
     subgraph Scenario 1 [Scenario 1: Local Serving with Local Inference]
         S1_Training[Training: Not Specified]
@@ -58,3 +59,4 @@ graph TD
         S4_Serving --> S4_Inference
         S4_Inference --> S4_Data
     end
+```
