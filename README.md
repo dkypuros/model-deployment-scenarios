@@ -134,7 +134,7 @@ In this variation, the focus is on utilizing cloud-native resources extensively,
 
 3. **Generative AI Application in the Cloud:**
    - The generative AI application, designed to leverage the trained model, is also deployed in the cloud.
-   - Platforms like Redhat OpenShift offer marketplace options for deploying these applications in various public clouds.
+   - Red Hat OpenShift offer marketplace options for deploying these applications in various public clouds.
    - Both the application and inference processes are cloud-based, making use of the cloud's foundational models or the custom-tuned models with corporate data.
 
 In both Use Case 1A and 1B, the primary distinction lies in where the inference occurs and how the model is managed post-training—locally in 1A with potential open-source models, or entirely in the cloud in 1B with proprietary or more complex models. This decision impacts the flexibility, data sovereignty, and integration with other cloud services for the customer.
