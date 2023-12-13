@@ -177,3 +177,45 @@ Red Hat OpenShift provides a significant advantage in this scenario by:
 
 In summary, Use Case 1B strategically positions the customer to take full advantage of the public API ecosystem. This approach is supported by the confidence in cloud governance and privacy, financially advantageous arrangements, and the utilization of Red Hat OpenShift to bridge and enhance operations across multi and hybrid cloud environments. The customer thus gains a versatile, powerful, and customizable AI and cloud solution and on-premise solutions for non model serving and trainging workloads. 
 
+## Why Use Case 1A?
+
+### Use Case 1A: Strategic Approach for Local Inference with Public Cloud Training
+
+In Use Case 1A, the customer's strategy is shaped by the desire to balance the benefits of public cloud resources with the control and security of local inference. Here’s how this strategy unfolds:
+
+#### **Utilizing Public Cloud for Training**
+
+1. **Cost-Effective Model Development:**
+   - The public cloud is seen as a cost-efficient environment for training AI models, especially when avoiding upfront capital investment in GPUs and other infrastructure.
+   - It's ideal for testing solutions and gauging their potential to generate revenue or reduce expenses.
+
+2. **Faster Time-to-Market:**
+   - By leveraging cloud resources, the customer can quickly test the viability of AI solutions.
+   - This approach accelerates the process from concept to testing, ensuring a swift market response.
+
+#### **Local Deployment for Inference and Integration**
+
+1. **Integration with Corporate Data:**
+   - Post-training, the model is brought on-premise to be integrated with specific, live corporate data.
+   - This allows for a more tailored application of the model to real-life corporate scenarios, distinct from the training data.
+
+2. **Enhanced Governance and Security:**
+   - The on-premise deployment of the model for inference aligns with the customer's focus on data governance, security, and privacy.
+   - This approach offers greater control over the model and the data it interacts with.
+
+3. **Serving Internal and External Customers:**
+   - The model's inference capabilities are utilized to serve internal employees or to enhance products offered to external customers.
+   - Local inference supports the provision of specialized AI services with a focus on customer expectations and security.
+
+#### **Emphasis on Open Source Models and Vendor Selection**
+
+1. **Open Source Model Preference:**
+   - The strategy demands the use of open-source models that can be trained in the cloud and then transferred locally for inference.
+   - This choice facilitates ease of transfer and alignment with the company's governance standards.
+
+2. **Choosing the Right Public Cloud Partner:**
+   - The customer must select a public cloud provider that supports this open-source approach.
+   - The choice of vendor is crucial, as it needs to align with the company’s strategy of training in the cloud and deploying locally.
+
+In summary, Use Case 1A represents a strategic blend of leveraging cloud capabilities for training and local resources for inference. This approach is driven by the need for cost efficiency, faster time-to-market, enhanced data security, and control over the AI models, particularly in rapidly evolving business environments. The focus on open-source models and careful selection of cloud vendors underpins this strategy, ensuring alignment with the company's overall objectives and governance policies.
+
