@@ -96,3 +96,45 @@ BiRel(publicCloudTraining, localTrainingData, "Accesses for training", "Secure C
 BiRel(publicCloudServing, localDataStorage, "Accesses for inference data", "API Calls")
 
 ```
+
+## Written Description of Model Consumption "Use Cases"
+
+- These are model focused use cases, not high level business value use cases.
+
+### Use Case 1: Model Training in the Cloud and Deployment Options
+
+#### **Use Case 1A: Local Deployment of Open Source Model for Inference**
+
+In this scenario, the customer focuses on leveraging public cloud resources for training their AI model. The steps include:
+
+1. **Choosing a Public Cloud Vendor:**
+   - The customer selects their preferred cloud provider.
+   - They explore various foundational models available for training.
+
+2. **Training with Corporate Data:**
+   - The customer moves their corporate data to the cloud.
+   - They use this data to train the model, potentially an open-source model.
+
+3. **Local Deployment for Inference:**
+   - After training, the customer takes the model off-premise for local deployment.
+   - This model is used for inference on the customer's premises.
+   - The customer might use a standalone generative AI application, either developed in-house or provided by a vendor, to utilize the model.
+
+#### **Use Case 1B: Cloud-based Deployment with Proprietary Development**
+
+In this variation, the focus is on utilizing cloud-native resources extensively, especially when dealing with proprietary or highly integrated cloud models.
+
+1. **Cloud-based Model Training with Proprietary Elements:**
+   - The model training still happens in the public cloud, similar to Use Case 1A.
+   - However, the model may involve proprietary elements or extensive fine-tuning, making it less portable.
+
+2. **Dependence on Cloud for Inference:**
+   - The trained model remains in the cloud, primarily due to its complexity or proprietary nature.
+   - This model could be a sophisticated one, integrating more deeply with cloud services.
+
+3. **Generative AI Application in the Cloud:**
+   - The generative AI application, designed to leverage the trained model, is also deployed in the cloud.
+   - Platforms like Redhat OpenShift offer marketplace options for deploying these applications in various public clouds.
+   - Both the application and inference processes are cloud-based, making use of the cloud's foundational models or the custom-tuned models with corporate data.
+
+In both Use Case 1A and 1B, the primary distinction lies in where the inference occurs and how the model is managed post-training—locally in 1A with potential open-source models, or entirely in the cloud in 1B with proprietary or more complex models. This decision impacts the flexibility, data sovereignty, and integration with other cloud services for the customer.
