@@ -175,5 +175,5 @@ Red Hat OpenShift provides a significant advantage in this scenario by:
    - Customers can extend unique services to other clouds or back to their premises using open source technologies.
    - OpenShift offers a streamlined and efficient way to enhance and personalize the customer's cloud experience.
 
-In summary, Use Case 1B strategically positions the customer to take full advantage of the public cloud's extensive service ecosystem. This approach is supported by the confidence in cloud governance and privacy, financially advantageous arrangements, and the utilization of Red Hat OpenShift to bridge and enhance operations across multi and hybrid cloud environments. The customer thus gains a versatile, powerful, and customizable AI and cloud solution.
+In summary, Use Case 1B strategically positions the customer to take full advantage of the public API ecosystem. This approach is supported by the confidence in cloud governance and privacy, financially advantageous arrangements, and the utilization of Red Hat OpenShift to bridge and enhance operations across multi and hybrid cloud environments. The customer thus gains a versatile, powerful, and customizable AI and cloud solution and on-premise solutions for non model serving and trainging workloads. 
 
