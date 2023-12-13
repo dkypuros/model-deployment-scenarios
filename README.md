@@ -127,6 +127,8 @@ In this variation, the focus is on utilizing cloud-native resources extensively,
 1. **Cloud-based Model Training with Proprietary Elements:**
    - The model training still happens in the public cloud, similar to Use Case 1A.
    - However, the model may involve proprietary elements or extensive fine-tuning, making it less portable.
+   - MLOps teams must manage complex training cycles, which involve vast amounts of data, extensive computational resources, and advanced techniques to ensure model accuracy and efficiency.
+These challenges impact decisions related to the location of operations (cloud vs. on-premise) and the feasibility of certain training workflows.****
 
 2. **Dependence on Cloud for Inference:**
    - The trained model remains in the cloud, primarily due to its complexity or proprietary nature.
