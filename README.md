@@ -219,3 +219,18 @@ In Use Case 1A, the customer's strategy is shaped by the desire to balance the b
 
 In summary, Use Case 1A represents a strategic blend of leveraging cloud capabilities for training and local resources for inference. This approach is driven by the need for cost efficiency, faster time-to-market, enhanced data security, and control over the AI models, particularly in rapidly evolving business environments. The focus on open-source models and careful selection of cloud vendors underpins this strategy, ensuring alignment with the company's overall objectives and governance policies.
 
+## Sequence Diagrams
+
+```mermaid
+sequenceDiagram
+    participant C as Customer
+    participant PC as Public Cloud
+    participant LI as Local Infrastructure
+
+    C->>PC: Select and use foundational models for training
+    PC->>C: Train model with corporate data
+    C->>PC: Retrieve trained model
+    PC-->>C: Provide trained model
+    C->>LI: Deploy model locally for inference
+    LI->>C: Perform local inference with corporate data
+```
