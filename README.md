@@ -221,6 +221,8 @@ In summary, Use Case 1A represents a strategic blend of leveraging cloud capabil
 
 ## Sequence Diagrams
 
+**Sequence Diagram for Use Case 1A: Local Inference with Public Cloud Training**
+
 ```mermaid
 sequenceDiagram
     participant C as Customer
@@ -233,4 +235,20 @@ sequenceDiagram
     PC-->>C: Provide trained model
     C->>LI: Deploy model locally for inference
     LI->>C: Perform local inference with corporate data
+```
+
+**Sequence Diagram for Use Case 1B: Public Cloud for Training and Inference**
+
+```mermaid
+sequenceDiagram
+    participant C as Customer
+    participant PC as Public Cloud
+    participant OS as OpenShift / Vendor Platform
+
+    C->>PC: Select and use foundational/proprietary models for training
+    PC->>C: Train model with corporate data
+    C->>PC: Setup Generative AI Application in the cloud
+    PC->>OS: Host AI Application on OpenShift / Vendor Platform
+    OS->>PC: Utilize trained model for inference
+    PC-->>C: Provide inference services in the cloud
 ```
