@@ -1,5 +1,6 @@
 # model-deployment-scenarios
 
+## Two Differnent Points of View
 
 ### Table 1: Perspectives on Training Application vs. Generative AI Application
 
@@ -17,6 +18,8 @@
 | **Scenario 2**               | Training in Public Cloud with Foundational Model                                                              | Training occurs in the public cloud, leveraging cloud resources for model development and iteration.                                                           |
 | **Scenario 3**               | Local Training and Serving                                                                                    | Similar to Scenario 2, but all activities, including training and serving, happen locally at the customer's premises.                                           |
 | **Scenario 4**               | Serving in Public Cloud with Local Inference                                                                  | AI model is served from the public cloud, but inference occurs locally at the customer's premises. Balances cloud capabilities with local data processing. |
+
+## Simple Design
 
 ```mermaid
 graph TD
@@ -59,4 +62,35 @@ graph TD
         S4_Serving --> S4_Inference
         S4_Inference --> S4_Data
     end
+```
+
+## Detailed Design
+
+```mermaid
+
+C4Context
+title System Context diagram for AI Deployment Scenarios
+Enterprise_Boundary(cloud, "Cloud Environment") {
+    System_Ext(publicCloudTraining, "Public Cloud Training", "Scenario 2: Training in Public Cloud with Foundational Model")
+    System_Ext(publicCloudServing, "Public Cloud Serving", "Scenario 4: Serving in Public Cloud with Local Inference")
+
+    Enterprise_Boundary(premise, "On-Premises Environment") {
+        System(localTrainingServing, "Local Training & Serving System", "Scenario 3: Local Training and Serving")
+        System(localInferenceSystem, "Local Inference System", "Scenario 1: Local Serving with Local Inference")
+        System(localDataStorage, "Local Data Storage", "Stores and manages data locally for Scenarios 1 and 3")
+
+        SystemDb_Ext(localInferenceData, "Local Inference Data", "Data used and generated in local inference (Scenario 1)")
+        SystemDb(localTrainingData, "Local Training Data", "Data used for training in Scenario 3")
+    }
+
+    Rel(publicCloudTraining, publicCloudServing, "Interacts with")
+    Rel(publicCloudServing, localInferenceSystem, "Sends inference requests", "API Calls")
+    Rel(localTrainingServing, localDataStorage, "Uses data from")
+    Rel(localInferenceSystem, localInferenceData, "Generates/Stores Data")
+    Rel(localTrainingServing, localTrainingData, "Trains with/Stores Data")
+}
+
+BiRel(publicCloudTraining, localTrainingData, "Accesses for training", "Secure Connection")
+BiRel(publicCloudServing, localDataStorage, "Accesses for inference data", "API Calls")
+
 ```
