@@ -252,3 +252,35 @@ sequenceDiagram
     OS->>PC: Utilize trained model for inference
     PC-->>C: Provide inference services in the cloud
 ```
+
+## Summary
+
+### Key Elements in Strategy for Building Generative AI Applications
+
+When strategizing the development and deployment of generative AI applications, several critical elements come into play. These elements collectively shape the approach and effectiveness of AI solutions in different environments. Here's an updated breakdown, including a distinct focus on inference:
+
+1. **The Training Process:**
+   - Involves the methodologies and resources used for model development.
+   - Factors include algorithm selection, data set utilization, and model complexity.
+   - The training environment (cloud-based or on-premise) significantly influences this process.
+
+2. **Inference Considerations:**
+   - Inference is where the trained model is applied to new data to generate insights or content.
+   - Key aspects include response time, accuracy, and resource efficiency.
+   - The location and method of inference (local or cloud-based) can impact performance, privacy, and cost.
+
+3. **Location of Operations:**
+   - The choice between cloud, on-premise, or hybrid environments affects many aspects of AI application deployment.
+   - This decision influences data privacy, processing speeds, operational costs, and ease of access.
+
+4. **Application Workflows:**
+   - Distinct workflows exist for deploying production generative AI applications versus training applications.
+   - Production workflows are centered around application efficiency, reliability, and scalability.
+   - Training workflows focus on model development, including accuracy, data processing, and iterative improvements.
+
+5. **Model and Application Transferability:**
+   - The ability to move AI models and applications between different environments is crucial for operational flexibility.
+   - Transferability is affected by compatibility with different platforms and adherence to open standards.
+   - It allows organizations to leverage different environments' strengths, such as training in the cloud and deploying locally.
+
+In summary, the strategy for developing generative AI applications is multifaceted, requiring careful consideration of the training process, inference mechanisms, operational location, application workflows, and the transferability of models and applications. Each element plays a pivotal role in shaping the overall effectiveness, efficiency, and adaptability of AI solutions within an organization's technological and business landscape.
