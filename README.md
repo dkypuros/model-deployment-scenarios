@@ -179,7 +179,7 @@ In summary, Use Case 1B strategically positions the customer to take full advant
 
 ## Why Use Case 1A?
 
-### Use Case 1A: Strategic Approach for Local Inference with Public Cloud Training
+### Use Case 1A: Strategic Approach for Local Inference with Public Cloud Training focused on Governance
 
 In Use Case 1A, the customer's strategy is shaped by the desire to balance the benefits of public cloud resources with the control and security of local inference. Here’s how this strategy unfolds:
 
